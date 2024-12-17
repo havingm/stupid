@@ -108,6 +108,6 @@ func (tcpConn *TCPConn) ReadMsg() ([]byte, error) {
 	return tcpConn.msgParser.Read(tcpConn)
 }
 
-func (tcpConn *TCPConn) WriteMsg(msg []byte) error {
-	return tcpConn.msgParser.Write(tcpConn, msg)
+func (tcpConn *TCPConn) WriteMsg(args ...[]byte) error {
+	return tcpConn.msgParser.Write(tcpConn, args...)
 }
