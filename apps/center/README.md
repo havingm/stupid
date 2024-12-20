@@ -1,0 +1,2 @@
+# center
+for server register.
